@@ -5,6 +5,7 @@
     height: 600px;
     padding: 30px;
     position: relative;
+    vertical-align: top;
     width: 400px;
 }
 

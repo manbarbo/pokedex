@@ -14,8 +14,9 @@ class App extends Component {
   }
 
   handlePokemonSelection = pokemon => {
-    alert(pokemon);
-    this.state.pokemonSelected = pokemon;
+    this.setState({
+      pokemonSelected: pokemon
+    });
   };
   
   render() {

@@ -1,8 +1,36 @@
 .detailViewCont {
-    height: 600px;
-    width: 400px;
     background-color: gray;
-    display: inline-block;
     border-radius: 20px;
+    display: inline-block;
+    height: 600px;
     padding: 30px;
+    position:relative;
+    vertical-align: top;
+    width: 400px;
+}
+
+.content {
+    background-color: #E71D23;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+}
+
+.SpritesViewCont {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    margin: 40px;
+    height: 30%;
+    padding: 5px;
+}
+
+.PokemonDetailsCont {
+    background-color: #FFFFFF;
+    height: calc(100% - 20px - 40px - 30% - 10px - 80px); /*100% - (padding*2) - (margin-bottom) - (SpritesViewCont.height) - (SpritesViewCont.padding*2) - (SpritesViewCont.margin*2)*/
+    border-radius: 5px;
+    margin-left:  40px;
+    margin-right:  40px;
+    text-align: left;
+    padding: 10px;
 }
