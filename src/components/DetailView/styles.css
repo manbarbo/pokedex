@@ -1,0 +1,8 @@
+.detailViewCont {
+    height: 600px;
+    width: 400px;
+    background-color: gray;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 30px;
+}

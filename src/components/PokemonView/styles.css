@@ -1,0 +1,88 @@
+.pokemonViewCont {
+    background-color: #E71D23;
+    border-radius: 20px;
+    display: inline-block;
+    height: 600px;
+    padding: 30px;
+    position: relative;
+    width: 400px;
+}
+
+.searchBar input {
+    border-radius: 5px;
+    margin-right: 20px;
+    font-size: 20px;
+    padding: 4px;
+}
+
+.searchBar button {
+    background-color: #329BD4;
+    border-radius: 50%;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.controlButtons {
+    bottom: 20px;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    right: 0;
+}
+
+.controlButtons button{
+    background-color: #329BD4;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    height: 15px;
+    margin: 10px;
+    width: 50px;
+}
+
+.pokemonListCont {
+    margin-top: 15px !important;
+}
+
+.pokemonPreviewCont {
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    height: 96px;
+    margin: 0 auto;
+    position: relative;
+    width: 96px;
+}
+
+.pokemonFrame{
+    height: 96px;
+    width: 96px;
+}
+
+.pokemonName {
+    background-color: rgba(0,0,0,30%);
+    bottom: 0;
+    color: white;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+}
+
+.pokemonID {
+    background-color: rgba(0,0,0,30%);
+    color: white;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.notFound {
+    margin: 20px;
+}
