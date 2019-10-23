@@ -13,7 +13,6 @@ class PokemonDetail extends Component {
     componentDidUpdate(prevProps, prevState) {
         if (prevProps.pokemon != this.props.pokemon)
         {   
-            console.log(this.props.pokemon);
             this.setState({
                 pokemonSelected: this.props.pokemon
             });
