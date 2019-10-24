@@ -1,5 +1,11 @@
+/*
+*   url_base_pokemon: url for the pokeapi
+*/
 export const url_base_pokemon = "https://pokeapi.co/api/v2/";
 
+/*
+*   url_base_pokemon: The sprites order list
+*/
 export const SPRITE_ORDER = [
     "front_default",
     "back_default",
