@@ -18,7 +18,7 @@
 }
 
 .SpritesViewCont {
-    background-color: #FFFFFF;
+    background-color: #F8F8FF;
     border-radius: 5px;
     margin: 40px;
     height: 30%;
@@ -26,9 +26,10 @@
 }
 
 .PokemonDetailsCont {
-    background-color: #FFFFFF;
-    height: calc(100% - 20px - 40px - 30% - 10px - 80px); /*100% - (padding*2) - (margin-bottom) - (SpritesViewCont.height) - (SpritesViewCont.padding*2) - (SpritesViewCont.margin*2)*/
+    background-color: #F8F8FF;
     border-radius: 5px;
+    font-size: 18px;
+    height: calc(100% - 20px - 40px - 30% - 10px - 80px); /*100% - (padding*2) - (margin-bottom) - (SpritesViewCont.height) - (SpritesViewCont.padding*2) - (SpritesViewCont.margin*2)*/
     margin-left:  40px;
     margin-right:  40px;
     text-align: left;
@@ -38,4 +39,100 @@
 .PokemonSprite {
     width: 120px;
     height: 120px;
+}
+
+.Capital {
+    text-transform: capitalize;
+}
+
+.Bold {
+    font-weight: bold;
+}
+
+.PokemonType {
+    border: 1px black solid;
+    border-radius: 10px;
+    color: white;
+    display: inline-block;
+    font-family: "Catamaran";
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 90px;
+    -webkit-text-stroke: 1px black;
+}
+
+/* Pokemon Types bgColor*/
+.bugType {
+    background-color: #87970D;
+}
+
+.darkType {
+    background-color: #3C2E23;
+}
+
+.dragonType {
+    background-color: #7E6BDF;
+}
+
+.electricType {
+    background-color: #F9B713;
+}
+
+.fairyType {
+    background-color: #F6B2F4;
+}
+
+.fightingType {
+    background-color: #7F331D;
+}
+
+.fireType {
+    background-color: #CD2706;
+}
+
+.flyingType {
+    background-color: #8FA5EF;
+}
+
+.ghostType {
+    background-color: #5C5CAE;
+}
+
+.grassType {
+    background-color: #66BB2B;
+}
+
+.groundType {
+    background-color: #CEAD52;
+}
+
+.iceType {
+    background-color: #6FD1F7;
+}
+
+.normalType {
+    background-color: #C7C2BA;
+}
+
+.poisonType {
+    background-color: #934697;  
+}
+
+.psychicType {
+    background-color: #E8497F;
+}
+
+.rockType {
+    background-color: #A99349;
+}
+
+.steelType {
+    background-color: #908E9E;
+}
+
+.waterType {
+    background-color: #3191F0;
 }

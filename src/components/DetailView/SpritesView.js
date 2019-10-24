@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import AliceCarousel from 'react-alice-carousel';
-import "react-alice-carousel/lib/alice-carousel.css";
+import { SPRITE_ORDER } from './../../constants/api_url'
+import 'react-alice-carousel/lib/alice-carousel.css';
 
 class SpritesView extends Component {
 
@@ -16,10 +17,10 @@ class SpritesView extends Component {
         if (prevProps.pokemon != this.props.pokemon)
         {   
             let spriteList = [];
-
-            for(let sprite in this.props.pokemon.sprites){
-                if (this.props.pokemon.sprites[sprite]) {
-                    spriteList.push({key:sprite, src:this.props.pokemon.sprites[sprite]});
+            for(let order of SPRITE_ORDER)
+            {
+                if (this.props.pokemon.sprites[order]) {
+                    spriteList.push({key:order, src:this.props.pokemon.sprites[order]});
                 }
             }
 
