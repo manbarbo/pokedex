@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
+import { getPokemonIDFormated } from './../../services/getPokemonApi.service';
 
 class PokemonDetail extends Component {
 
@@ -32,7 +33,7 @@ class PokemonDetail extends Component {
         if(abilities)
             return abilities.map( x => ( 
                 <Grid key={x.ability.name} item xs={12}> 
-                    {x.ability.name}  
+                    {x.ability.name} {x.is_hidden ? <span className="HiddenHability">(Hidden)</span> : "" }
                 </Grid>
             ));
     }
@@ -46,7 +47,7 @@ class PokemonDetail extends Component {
                         ID:
                     </Grid>
                     <Grid item xs={9}>
-                        { this.state.pokemonSelected.id }
+                        { getPokemonIDFormated(this.state.pokemonSelected.id) }
                     </Grid>
 
                     <Grid item xs={3} className="Bold">

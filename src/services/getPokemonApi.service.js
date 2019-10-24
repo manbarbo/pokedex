@@ -11,4 +11,14 @@ export const getUrlSearchPokemon = (pokemonName) => {
     return  `${url_base_pokemon}pokemon/${pokemonName}`;
 }
 
+export const getPokemonIDFormated = (pokemonID) => {
+    if(pokemonID)
+        return pokemonIDFormater(pokemonID, 3, '0');
+}
+
+const pokemonIDFormater = (pokemonID, length, padding) => { 
+    var str = pokemonID + "";
+    return (length <= str.length) ? str : getPokemonIDFormated(padding+str, length, padding);
+}
+
 export default getUrlPokemonList;

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { PropTypes } from 'prop-types';
 import { Grid } from '@material-ui/core';
+import { getPokemonIDFormated } from './../../../services/getPokemonApi.service';
 
 class PokemonPreview extends Component {
 
@@ -21,7 +22,7 @@ class PokemonPreview extends Component {
                         <img src={ pokemon.sprites.front_default } />
                     </div>
                     <div className="pokemonID">
-                        { pokemon.id }
+                        { getPokemonIDFormated(pokemon.id) }
                     </div>
                 </div>
             </Grid>
